@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>出荷予定表</title>
+<style>
+  :root { --line:#d0d0d0; --head:#2e7d32; --accent:#1b5e20; --zebra:#f7f9f7; }
+  * { box-sizing:border-box; }
+  body { margin:0; padding:16px 20px; color:#222;
+         font-family:"Hiragino Sans","Yu Gothic",sans-serif; font-size:13px; }
+  h1 { font-size:19px; margin:0 0 2px; color:var(--accent); }
+  .sub { color:#666; font-size:12px; margin-bottom:12px; }
+  nav { margin-bottom:14px; }
+  nav a { display:inline-block; padding:6px 14px; margin-right:8px; border-radius:4px;
+          border:1px solid var(--head); color:var(--head); text-decoration:none; font-size:13px; }
+  nav a.on { background:var(--head); color:#fff; }
+  button.print { padding:6px 14px; border:1px solid #888; background:#fff;
+                 border-radius:4px; cursor:pointer; font-size:13px; }
+  .wrap { overflow-x:auto; }
+  table { border-collapse:collapse; width:100%; }
+  th, td { border:1px solid var(--line); padding:4px 6px; text-align:center; }
+  th { background:var(--head); color:#fff; font-weight:600; font-size:12px; }
+  td.name { text-align:left; white-space:normal; min-width:230px; max-width:320px; line-height:1.35; }
+  td.name .slip { display:block; color:#777; font-size:10.5px; margin-top:1px; }
+  td.area { white-space:nowrap; color:#555; }
+  td.pid  { color:#888; font-size:11px; }
+  tbody tr:nth-child(even) { background:var(--zebra); }
+  td.zero { color:#ccc; }
+  td.num { font-variant-numeric:tabular-nums; width:62px; }
+  tr.total td { background:#e8f5e9; font-weight:700; color:var(--accent); }
+  td.sat, th.sat { background:#eef4ff; }
+  td.sun, th.sun { background:#fdeeee; }
+  tr.total td.sat, tr.total td.sun { background:#e8f5e9; }
+  th.sat, th.sun { background:var(--head); }
+  .empty { padding:30px; text-align:center; color:#888; border:1px dashed var(--line); }
+  @media print {
+    @page { size:A4 landscape; margin:10mm; }
+    body { padding:0; font-size:10px; }
+    .wrap { overflow:visible; }
+    td.name { min-width:170px; max-width:240px; }
+    td.num { width:46px; }
+    nav, button.print { display:none; }
+    th { -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+    tbody tr:nth-child(even), tr.total td { -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+    table { page-break-inside:auto; }
+    tr { page-break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+<h1>出荷予定表</h1>
+<div class="sub">集荷予定日ベース／11月27日から7日間　更新 2026/11/27 13:57</div>
+<nav><a href="index.html" class="on">出荷予定表</a><a href="jisseki.html" class="">出荷実績表</a><button class="print" onclick="window.print()">印刷</button></nav>
+
+<div class="wrap"><table>
+  <thead>
+    <tr><th>自治体</th><th>お礼品ID</th><th>商品名</th>
+        <th class="">11/27(金)</th><th class="sat">11/28(土)</th><th class="sun">11/29(日)</th><th class="">11/30(月)</th><th class="">12/1(火)</th><th class="">12/2(水)</th><th class="">12/3(木)</th>
+        <th>合計</th></tr>
+  </thead>
+  <tbody><tr><td class="area">茅野市</td><td class="pid">1600512</td><td class="name">バニラ&生ソフトクリームアイス 味比べセット　各6個・2種類(合計12個)<span class="slip">味比べ バニラ&生ソフト12個</span></td><td class="num zero">–</td><td class="num sat zero">–</td><td class="num sun zero">–</td><td class="num zero">–</td><td class="num zero">–</td><td class="num">1</td><td class="num zero">–</td><td class="num"><b>1</b></td></tr><tr><td class="area">茅野市</td><td class="pid">1595891</td><td class="name">復刻版バニラアイス 6個<span class="slip">復刻版バニラアイス　6個</span></td><td class="num zero">–</td><td class="num sat zero">–</td><td class="num sun zero">–</td><td class="num zero">–</td><td class="num zero">–</td><td class="num">1</td><td class="num zero">–</td><td class="num"><b>1</b></td></tr><tr><td class="area">茅野市</td><td class="pid">1586194</td><td class="name">生ソフトクリームアイス 6個<span class="slip">生ソフトアイス　6個</span></td><td class="num zero">–</td><td class="num sat zero">–</td><td class="num sun zero">–</td><td class="num zero">–</td><td class="num zero">–</td><td class="num">1</td><td class="num zero">–</td><td class="num"><b>1</b></td></tr><tr><td class="area">茅野市</td><td class="pid">1733869</td><td class="name">天然由来の飼料にこだわった濃厚なコク。農大生が愛情込めて育てた平飼い親鳥の鶏つくね【1.5kg】<span class="slip">親鳥つくね 300g×5袋</span></td><td class="num zero">–</td><td class="num sat zero">–</td><td class="num sun zero">–</td><td class="num zero">–</td><td class="num zero">–</td><td class="num zero">–</td><td class="num">1</td><td class="num"><b>1</b></td></tr></tbody>
+  <tfoot><tr class="total"><td colspan="3">合計</td><td class="num">–</td><td class="num sat">–</td><td class="num sun">–</td><td class="num">–</td><td class="num">–</td><td class="num">3</td><td class="num">1</td><td class="num">4</td></tr></tfoot>
+</table></div>
+</body></html>
